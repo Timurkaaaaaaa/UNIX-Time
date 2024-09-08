@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>UNIX Время</title>
+
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="icon" type="image/ico" href="/icon.ico">
+	<link rel="stylesheet" href="/main.css">
+
+
+	
+
+	<script type="text/javascript">
+		window.onresize = function () {
+			window.resizeTo(600, 790);
+		};
+	</script>
+	<script type="text/javascript">
+		async function display(day, month, year, hour, min, sec) {
+			let d = document.getElementById('day').value;
+			let m = document.getElementById('month').value;
+			let y = document.getElementById('year').value;
+			let h = document.getElementById('hour').value;
+			let minute = document.getElementById('min').value;
+			let second = document.getElementById('sec').value;
+
+			let res = await eel.get_unix(d, m, y, h, minute, second)();
+			
+			document.getElementById('info').textContent = res;
+		};
+	</script>
+	<script type="text/javascript">
+		eel.expose(error);
+		function error() {
+        alert("Невозможно указание несуществующего месяца/дня/секунды/минуты/часа")
+    }
+	</script>
+
+</head>
+<body>
+	<h3 id=name>День:</h3>
+	<input id="day" type="text" placeholder="Введите день..." required="" value="08">
+	<h3 id=name>Месяц:</h3>
+	<input id="month" type="text" placeholder="Введите месяц..." required="" value="09">
+	<h3 id=name>Год:</h3>
+	<input id="year" type="text" placeholder="Введите год..." required="" value="2024">
+	<h3 id=name>Час:</h3>
+	<input id="hour" type="text" placeholder="Введите час..." required="" value="02">
+	<h3 id=name>Минута:</h3>
+	<input id="min" type="text" placeholder="Введите минуту..." required="" value="20">
+	<h3 id=name>Секунда:</h3>
+	<input id="sec" type="text" placeholder="Введите секунду..." required="" value="10">
+
+	<button id="show" onclick="display(day, month, year, hour, min, sec)">Узнать UNIX время</button>
+	
+	<p class='small-caps' id="info">Результат:</p>
+
+	<small id="Copyright">Copyright 2024 Timurkaaa</small><br>
+</body>
+</html>

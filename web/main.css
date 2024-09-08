@@ -1,0 +1,153 @@
+body {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgb(43, 88, 97) 100%);
+}
+
+#img {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#day, #month, #year, #hour, #min, #sec {
+	display: block;
+	border: none;
+	margin-top: 15px;
+
+	background: -webkit-linear-gradient(90deg, #2c12af,#1763db,#55a1f6);
+	background: linear-gradient(90deg, #2c12af,#1763db,#55a1f6);                                             
+
+	border-radius: 20px;
+	padding: 10px;
+	color: white;
+	outline: none;
+	width: 95%;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#show {
+	display: block;
+	border:  none;
+	margin-top: 15px;
+
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	width: 95%;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#show:hover {
+	opacity: .9;
+}
+
+#info {
+	display: block;
+	border:  none;
+	margin-top: 15px;
+
+	background: -webkit-linear-gradient(90deg, #03ed93,#24cf67,#2eb13a);
+	background: linear-gradient(90deg, #03ed93,#24cf67,#2eb13a);                                                                           
+
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	outline: none;
+	width: 50%;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+
+    font-family: 'Verdana';
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#txt {
+	display: block;
+	border:  none;
+	margin-top: 15px;
+
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	outline: none;
+	width: 20%;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+
+	font-family: 'Verdana';
+
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#name {
+	display: block;
+	border:  none;
+	margin-top: 15px;
+
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	outline: none;
+	width: 70%;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+
+	font-family: 'Verdana';
+}
+
+
+#Copyright {
+	display: block;
+	border:  none;
+	margin-top: 15px;
+
+	background: rgb(0, 255, 136);
+	background: linear-gradient(90deg, rgb(0, 255, 8) 0%, rgb(25, 164, 0) 50%, rgb(0, 96, 2) 100%);
+
+	border-radius: 10px;
+	padding: 8px;
+	color: white;
+	width: 45%;
+	font-size: 13px;
+	font-weight: bold;
+
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	
+	font-family: 'Verdana';
+}
+
+#Copyright:hover {
+	opacity: .9;
+}
