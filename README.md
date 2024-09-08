@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="https://img.icons8.com/?size=100&id=1fAihUqPyWy5&format=png&color=000000">
+      <img src="https://img.icons8.com/?size=100&id=19099&format=png&color=000000">
 </p>
 
 <p align="center">
@@ -15,6 +15,20 @@
 ## О проекте
 
 Программа для перевода времении в UNIX формат.
+
+## Установка
+1. Клонирование репозитория:
+   ```git clone https://github.com/Timurkaaaaaaa/UNIX-Time.git```
+2. Переходим в папку в которую Вы сохранили файл:
+   ```cd путь\к\папке```
+3. Установка python(Если ранее не было):
+   - Проверка наличия Python:
+           - Прописываем в консоли ```python``` если появляется версия - python установлен
+   - Установка Python:
+           - https://www.python.org/
+4. Установка зависимостей:
+      ```pip3 install -r requirements.txt```
+5. Можем запускать ярлык UNIX ```Время```
 
 ## Документация
 
